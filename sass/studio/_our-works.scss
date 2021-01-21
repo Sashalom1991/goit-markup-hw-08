@@ -1,0 +1,56 @@
+/* Чем мы занимаемся */
+
+.work-exemple {
+    @extend %container-padding;
+
+     @media screen and (max-width: 1199px) {
+            display: none;          
+    }
+   
+}
+
+.work-exemple-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.work-exemple-item:not(:last-child) {
+    padding-right: 30px;
+}
+
+.work-exemple-item {
+    display: block;
+    padding: 0;
+    z-index: 1;
+}
+
+.work-exemple-link {
+    position: relative;
+    display: inline-block;
+    width: 370px;
+    height: 294px;
+
+}
+
+.work-exemple-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include centredFlex();
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    
+    &>.text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $title-color-white;
+    }
+}
+
