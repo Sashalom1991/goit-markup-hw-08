@@ -537,7 +537,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: #2F303A;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/background/background-mobile.jpg);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//..//image/background/background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -554,7 +554,7 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../image/background/background-mobile@2x.jpg);
+    background-image: url(..//..//image/background/background-mobile@2x.jpg);
   }
 }
 
@@ -566,7 +566,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../../image/background/background-tablet.jpg);
+    background-image: url(..//..//image/background/background-tablet.jpg);
   }
 }
 
