@@ -8,7 +8,7 @@
     margin-right: auto;
     background-color: #2F303A;
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../image/background.jpg);
+    url(../image/background/background-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -19,6 +19,66 @@
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: url(../../image/background/background-mobile@2x.jpg);
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 3),
+screen and (min-resolution: 3dppx),
+screen and (min-resolution: 288dpi) {
+    .hero {
+        background-image: url(..//..//image/background/background-mobile@3x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: url(../../image/background/background-tablet.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        .hero {
+            background-image: url(..//..//image/background/background-tablet@2x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 3dppx),
+    screen and (min-resolution: 288dpi) {
+        .hero {
+            background-image: url(..//..//image/background/background-tablet@3x.jpg);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        background-image: url(..//..//image/background/background-desktop.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+        .hero {
+            background-image: url(..//..//image/background/background-desktop@2x.jpg);
+        }
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 3dppx),
+    screen and (min-resolution: 288dpi) {
+        .hero {
+            background-image: url(..//..//image/background/background-desktop@3x.jpg);
+        }
     }
 }
 

@@ -202,6 +202,12 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -251,13 +257,13 @@ button {
   }
 }
 
-.advantage, .work-exemple, .team-container, .container-client, .container-projects {
+.advantage, .team-container, .container-client, .container-projects {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .advantage, .work-exemple, .team-container, .container-client, .container-projects {
+  .advantage, .team-container, .container-client, .container-projects {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -531,7 +537,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   background-color: #2F303A;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/background.jpg);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/background/background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -543,6 +549,54 @@ button {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../image/background/background-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), screen and (min-resolution: 3dppx), screen and (min-resolution: 288dpi) {
+  .hero {
+    background-image: url(..//..//image/background/background-mobile@3x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../../image/background/background-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(..//..//image/background/background-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 3dppx), screen and (min-width: 768px) and (min-resolution: 288dpi) {
+  .hero {
+    background-image: url(..//..//image/background/background-tablet@3x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(..//..//image/background/background-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(..//..//image/background/background-desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 3), screen and (min-width: 1200px) and (min-resolution: 3dppx), screen and (min-width: 1200px) and (min-resolution: 288dpi) {
+  .hero {
+    background-image: url(..//..//image/background/background-desktop@3x.jpg);
   }
 }
 
@@ -660,6 +714,10 @@ button {
 }
 
 /* Чем мы занимаемся */
+.work-exemple {
+  padding-bottom: 94px;
+}
+
 @media screen and (max-width: 1199px) {
   .work-exemple {
     display: none;
@@ -761,8 +819,7 @@ button {
 }
 
 .worker-img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
 .team-text {
